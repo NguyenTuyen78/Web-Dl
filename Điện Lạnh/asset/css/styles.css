@@ -1,0 +1,326 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Body and general page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Header styling */
+header {
+    background-color: #1976D2; /* Màu xanh dương sáng */
+    color: white;
+    padding: 1rem 0;
+    transition: background-color 0.3s ease; /* Thêm hiệu ứng cho background của header */
+}
+
+header .logo img {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease; /* Thêm hiệu ứng cho liên kết */
+}
+
+header nav ul li a:hover {
+    color: #FFEB3B; /* Màu vàng sáng khi hover */
+}
+
+/* Hero section styling */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 60vh;
+    padding: 2rem;
+    color: white;
+    text-align: left;
+    transition: background 0.5s ease; /* Thêm hiệu ứng cho phần nền khi di chuột vào */
+}
+
+.hero:hover {
+    background: url('hero-image-hover.jpg') no-repeat center center/cover; /* Thay đổi nền khi hover */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+.hero button {
+    background-color: #1565C0; /* Màu xanh dương đậm cho nút */
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Thêm hiệu ứng cho nút */
+}
+
+.hero button:hover {
+    background-color: #0D47A1; /* Màu xanh dương đậm hơn khi hover */
+    transform: scale(1.1); /* Phóng to nút khi hover */
+}
+
+/* Featured Products */
+.featured-products {
+    background-color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1976D2; /* Xanh dương sáng cho tiêu đề */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease; /* Thêm hiệu ứng zoom cho sản phẩm */
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Zoom in sản phẩm khi hover */
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Thêm hiệu ứng zoom cho hình ảnh */
+}
+
+.product-item img:hover {
+    transform: scale(1.1); /* Zoom in hình ảnh khi hover */
+}
+
+.product-item h3 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.product-item p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.product-item button {
+    background-color: #1976D2; /* Xanh dương sáng cho nút */
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Thêm hiệu ứng cho nút */
+}
+
+.product-item button:hover {
+    background-color: #1565C0; /* Màu xanh dương đậm hơn khi hover */
+    transform: scale(1.1); /* Phóng to nút khi hover */
+}
+
+/* Services section */
+.services {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1976D2; /* Xanh dương sáng cho tiêu đề */
+}
+
+.services p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 0 2rem;
+}
+
+.service-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease; /* Thêm hiệu ứng zoom cho dịch vụ */
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Zoom in dịch vụ khi hover */
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-item p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.service-item button {
+    background-color: #1565C0; /* Màu xanh dương đậm cho nút */
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Thêm hiệu ứng cho nút */
+}
+
+.service-item button:hover {
+    background-color: #0D47A1; /* Màu xanh dương đậm hơn khi hover */
+    transform: scale(1.1); /* Phóng to nút khi hover */
+}
+
+/* Pagination Section */
+.pagination ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.pagination ul li {
+    margin: 0 5px;
+}
+
+.pagination ul li a {
+    text-decoration: none;
+    background-color: #1976D2; /* Màu xanh dương sáng cho pagination */
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng cho liên kết phân trang */
+}
+
+.pagination ul li a:hover {
+    background-color: #1565C0; /* Màu xanh dương đậm hơn khi hover */
+    transform: scale(1.1); /* Phóng to phân trang khi hover */
+}
+
+/* Footer */
+footer {
+    background-color: #0D47A1; /* Xanh dương đậm cho footer */
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer .footer-info p {
+    margin: 0.5rem 0;
+}
+
+footer .footer-logo img {
+    width: 120px;
+    height: auto;
+    margin-top: 1rem;
+}
+
+/* Media Queries for mobile responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer ul {
+        text-align: center;
+    }
+}
